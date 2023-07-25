@@ -7,20 +7,11 @@
 body {
   font-family: 'Heebo', sans-serif;
   font-size: 2rem;
-  margin: 20px;
-  padding: 0;
-  height: 80vh;
+  margin: 5rem;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-}
-
-
-body {
-  font-family: 'Heebo', sans-serif;
-  margin: 50px;
-  padding: 0;
 }
 
 .square {
@@ -41,21 +32,20 @@ body {
   background-color: aqua;
 }
 
-/* .board-row:after {
-  clear: both;
-  content: "";
-  display: table;
-} */
-
 .status {
   margin-bottom: 10px;
   text-align: center;
-}
-.game {
-  display: flex;
-  flex-direction: row;
+  font-weight: 900;
 }
 
-.game-info {
-  margin-left: 20px;
+.reset-button {
+  padding: 5px;
+  margin: 10px;
+  background-color: hotpink;
+  border-radius: 10px;
+}
+
+.reset-button-wrapper {
+  display: flex;
+  justify-content: center;
 }
