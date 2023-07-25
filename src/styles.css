@@ -9,19 +9,10 @@ body {
   font-size: 2rem;
   margin: 20px;
   padding: 0;
-  min-width: 50rem;
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  
-}
-
-
-body {
-  font-family: 'Heebo', sans-serif;
-  margin: 50px;
-  padding: 0;
 }
 
 .square {
@@ -42,36 +33,20 @@ body {
   background-color: aqua;
 }
 
-/* .board-row:after {
-  clear: both;
-  content: "";
-  display: table;
-} */
-
 .status {
   margin-bottom: 10px;
   text-align: center;
-}
-.game {
-  display: flex;
-  flex-direction: row;
+  font-weight: 900;
 }
 
-.game-info {
-  margin-left: 20px;
-}
-
-.history-button {
-  border-radius: 10px;
+.reset-button {
+  padding: 5px;
+  margin: 10px;
   background-color: hotpink;
-  padding: 10px;
-  margin: 5px;
-  width: 100%
+  border-radius: 10px;
 }
 
-li {
-  list-style: none;
+.reset-button-wrapper {
   display: flex;
   justify-content: center;
-  align-items: center;
 }

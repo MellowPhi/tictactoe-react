@@ -23,6 +23,11 @@ function Board({xIsNext, squares, onPlay}) {
     onPlay(nextSquares);
   }
 
+  function handleReset() {
+    setSquares(Array(9).fill(null));
+    setXIsNext(true);
+  }
+
   const winner = calculateWinners(squares);
   let status;
   if (winner) {
@@ -34,6 +39,10 @@ function Board({xIsNext, squares, onPlay}) {
   return (
     <React.Fragment>
       <div className="status">{status}</div>
+      <div className="reset-button-wrapper">
+        <button className='reset-button' onClick={handleReset}>Reset Game</button>
+      </div>
+
       <div className="board-row">
         <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
         <Square value={squares[1]} onSquareClick={() => handleClick(1)} />
@@ -49,6 +58,9 @@ function Board({xIsNext, squares, onPlay}) {
         <Square value={squares[7]} onSquareClick={() => handleClick(7)} />
         <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
       </div>
+
+
+
     </React.Fragment>
   );
 }
